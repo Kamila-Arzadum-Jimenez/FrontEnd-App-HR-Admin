@@ -35,9 +35,9 @@ class MyApp extends StatelessWidget {
       routes: {
         HomePage.routeName : (_)=> HomePage(),
         Inicio.routeName : (_)=> Inicio(),
-        Ginecologia.routeName : (_)=> Ginecologia(),
+        GinecologiaPage.routeName : (_)=> GinecologiaPage(),
         CardiologiaPage.routeName: (_)=> CardiologiaPage(),
-        General.routeName: (_)=> General(),
+        GeneralPage.routeName: (_)=> GeneralPage(),
         PediatriaPage.routeName: (_)=> PediatriaPage(),
       }
     );

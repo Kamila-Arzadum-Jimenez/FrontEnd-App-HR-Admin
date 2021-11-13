@@ -1,13 +1,11 @@
-import 'package:app_admi_register/api/authentication_api.dart';
-import 'package:app_admi_register/api/cardiologia_api.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:app_admi_register/api/general_api.dart';
 import 'package:flutter/material.dart';
 import 'input_text.dart';
-class CardiologiaForm extends StatelessWidget {
+class GeneralForm extends StatelessWidget {
 
 String nombre="", hora="", day="";
   GlobalKey<FormState> _formKeyC = GlobalKey();
-  final CardiologiaAPI _authenticationAPI = CardiologiaAPI();
+  final GeneralAPI _authenticationAPI = GeneralAPI();
 
   _submit(){
    final isOk = _formKeyC.currentState!.validate();
@@ -94,6 +92,5 @@ String nombre="", hora="", day="";
             ),
         ),
     );
-     
   }
 }

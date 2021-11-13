@@ -3,6 +3,7 @@ import 'package:app_admi_register/utils/responsive.dart';
 import 'package:app_admi_register/widgets/cardiologia_form.dart';
 import 'package:app_admi_register/widgets/circle.dart';
 import 'package:app_admi_register/widgets/login_form.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CardiologiaPage extends StatefulWidget {
@@ -80,6 +81,20 @@ class _CardiologiaPageState extends State<CardiologiaPage> {
                   ],
                   ),
                 ),
+ Positioned(
+                        left: 300,
+                        top: 650,
+                        child: SafeArea(
+                          child: CupertinoButton(
+                            color: Colors.indigoAccent[100],
+                            padding: EdgeInsets.all(10),
+                            child: Icon(Icons.arrow_back),
+                            borderRadius: BorderRadius.circular(30),
+                            onPressed: () {Navigator.pushNamed(context, "inicio");},
+                          ),
+                        )),
+
+
    Positioned(
                       left: 130,
                       top: 200,
@@ -118,7 +133,7 @@ class _CardiologiaPageState extends State<CardiologiaPage> {
                 ),
                 Text(
                   
-                 "Cardiologia",
+                 "𝗖𝗮𝗿𝗱𝗶𝗼𝗹𝗼𝗴𝗶𝗮",
                 textAlign: TextAlign.center, 
                 style: TextStyle(
                   fontSize: 30,
@@ -146,5 +161,6 @@ class _CardiologiaPageState extends State<CardiologiaPage> {
          
       )
     );
+    
   }
 }
